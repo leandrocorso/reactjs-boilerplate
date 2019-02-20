@@ -1,13 +1,24 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <h1>React JS Boilerplate</h1>
-      </div>
-    );
-  }
-}
+// Design
+import Template from '../../components/Template';
+
+// Routes
+import Home from '../Home';
+import Posts from '../Posts';
+import NotFound from '../NotFound';
+
+const App = () => (
+    <BrowserRouter>
+		<Template>
+			<Switch>
+				<Route className="Home" exact path="/" component={Home} />
+				<Route className="Posts" exact path="/posts" component={Posts} />
+				<Route path="*" component={NotFound} />
+			</Switch>
+		</Template>
+    </BrowserRouter>
+);
 
 export default App;
