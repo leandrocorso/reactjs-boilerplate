@@ -10,6 +10,7 @@ class Template extends Component {
 				<ul>
 					<li><NavLink exact to="/">Home</NavLink></li>
 					<li><NavLink exact to="/posts">Posts</NavLink></li>
+					<li><NavLink exact to="/tasks">Tasks</NavLink></li>
 				</ul>
 				{this.props.children}
 			</React.Fragment>
