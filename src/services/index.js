@@ -1,4 +1,5 @@
 import ExampleService from './Example';
+import GithubService from './Github';
 
 class Service {
 
@@ -14,4 +15,4 @@ class Service {
 
 }
 
-export { Service, ExampleService };
+export { Service, ExampleService, GithubService, };

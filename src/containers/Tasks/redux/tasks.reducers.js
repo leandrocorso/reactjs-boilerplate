@@ -1,4 +1,4 @@
-export default function tasks(state = [], action) {
+export default function reducers(state = [], action) {
     switch (action.type) {
         
         case 'ADD_TASK':
@@ -6,4 +6,4 @@ export default function tasks(state = [], action) {
             
         default: return state;
     }
-};
+}

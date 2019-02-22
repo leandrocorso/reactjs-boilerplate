@@ -9,10 +9,11 @@ import Template from '../../components/Template';
 import Home from '../Home';
 import Posts from '../Posts';
 import Tasks from '../Tasks';
+import Repos from '../Repos';
 import NotFound from '../NotFound';
 
 // Redux
-import store from '../../redux/store';
+import store from '../../store';
 
 const App = () => (
 	<Provider store={store}>
@@ -22,6 +23,7 @@ const App = () => (
 					<Route className="Home" exact path="/" component={Home} />
 					<Route className="Posts" exact path="/posts" component={Posts} />
 					<Route className="Tasks" exact path="/tasks" component={Tasks} />
+					<Route className="Repos" exact path="/github-repositories" component={Repos} />
 					<Route path="*" component={NotFound} />
 				</Switch>
 			</Template>

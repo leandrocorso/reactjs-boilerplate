@@ -13,11 +13,11 @@ class Posts extends Component {
 	}
 
 	componentDidMount() {
-		this._getPosts();
+		this.getPosts();
 	}
 
 	// Get the posts from API service
-	async _getPosts() {
+	async getPosts() {
 		const posts = await Service.exec(ExampleService.fetchPosts);
 		posts.error ? console.error(posts.error) : this.setState({ posts });
 	}

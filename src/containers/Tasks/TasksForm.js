@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-import * as actions from '../../redux/actions/tasks';
+import * as actions from './redux/tasks.actions';
 
 const initialState = { task: '' }
 

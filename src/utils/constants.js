@@ -1,15 +1,15 @@
 const HTTP_ERROR = {
-    E0 : 'Erro desconhecido',
-    E400 : 'Requisição inválida',
-    E401 : 'Requisição necessita de autenticação',
-    E403 : 'Acesso negado à requisição',
-    E404 : 'URL da requisição não encontrada',
-    E405 : 'Método HTTP não suportado',
-    E406 : 'Formato de requisição não suportado',
-    E415 : 'Formato de mídia não suportado',
-    E429 : 'Limite de requisições atingido',
-    E500 : 'Erro interno no servidor',
-    E503 : 'Serviço indisponível',
+    '0' : 'Erro desconhecido',
+    '400' : 'Requisição inválida',
+    '401' : 'Requisição necessita de autenticação',
+    '403' : 'Acesso negado à requisição',
+    '404' : 'URL da requisição não encontrada',
+    '405' : 'Método HTTP não suportado',
+    '406' : 'Formato de requisição não suportado',
+    '415' : 'Formato de mídia não suportado',
+    '429' : 'Limite de requisições atingido',
+    '500' : 'Erro interno no servidor',
+    '503' : 'Serviço indisponível',
 };
 
 export { HTTP_ERROR };
